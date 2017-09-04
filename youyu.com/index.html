@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>shoppingmall &lt; yuyu.com</title>
+  <link rel="stylesheet" href="./css/modules/init.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container row">
+    <header class="row is-isolate header">
+      <h1 class="col is-3 logo">
+        <a href="#">
+          <img src="./images/header/logo.svg" alt="youyu.com">
+        </a>
+      </h1>
+      <ul class="col is-2 user-menu o-11">
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">로그인</a></li>
+      </ul>
+      <form class="col is-6 search-form o-4">
+        <fieldset>
+          <legend>상품 검색</legend>
+          <input type="text" placeholder="검색어를 입력하세요">
+          <button type="button">검색</button>
+        </fieldset>
+      </form>
+      <nav class="row navi">
+        <h2 class="a11y-hidden">상품 메뉴</h2>
+        <ul class="col is-12">
+          <li><a href="#">main</a></li>
+          <li><a href="#">brand</a></li>
+          <li><a href="#">special</a></li>
+          <li><a href="#">outer</a></li>
+          <li><a href="#">tops</a></li>
+          <li><a href="#">bottom</a></li>
+          <li><a href="#">dress</a></li>
+          <li><a href="#">shoes</a></li>
+          <li><a href="#">bag</a></li>
+          <li><a href="#">acc</a></li>
+          <li><a href="#">summer</a></li>
+          <li><a href="#">etc</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <div class="filter-bg row">
+    <div class="container filter" tabindex="0">
+      <button class="row col is-12 filter-button">필터를 설정하세요</button>
+      <form action="javascript:alert('필터 선택')" class="filter-form is-8 col">
+        <fieldset class="age">
+          <legend>연령대</legend>
+          <input type="checkbox" id="teenager"><label for="teenager">10대</label>
+          <input type="checkbox" id="twenty"><label for="twenty">20대</label>
+          <input type="checkbox" id="thirty"><label for="thirty">30대</label>
+        </fieldset>
+        <fieldset class="style">
+          <legend>스타일</legend>
+          <input type="checkbox" id="girl"><label for="girl">소녀룩</label>
+          <input type="checkbox" id="modern"><label for="modern">모던시크</label>
+          <input type="checkbox" id="simple"><label for="simple">심플베이지</label>
+          <input type="checkbox" id="romentic"><label for="romentic">로멘틱</label>
+          <input type="checkbox" id="office"><label for="office">오피스룩</label>
+          <input type="checkbox" id="campus"><label for="campus">캠퍼스룩</label>
+          <input type="checkbox" id="vintage"><label for="vintage">빈티지</label>
+          <input type="checkbox" id="training"><label for="training">트레이닝</label>
+        </fieldset>
+        <div class="filter-button-set is-4 is-offset-4" role="group">
+          <button type="button">초기화</button>
+          <button type="submit">필터 선택 완료</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="container row">
+    <aside class="banner is-12 col">
+      <a href="#" title="인기상품 세일 목록 보기">
+        <img src="images/banner/banner-01.jpg" alt="인기상품 top100 20% sale 2016년 9월 22일 오후8시 부터 50분간">
+      </a>
+      <ol role="group" class="row indicator-group">
+        <li><a href="#" role="button" title="슬라이드 이동"></a></li>
+        <li><a href="#" role="button" title="슬라이드 이동"></a></li>
+        <li><a href="#" role="button" title="슬라이드 이동"></a></li>
+        <li><a href="#" role="button" title="슬라이드 이동"></a></li>
+        <li><a href="#" role="button" title="슬라이드 이동"></a></li>
+        <li><a href="#" role="button" title="슬라이드 이동"></a></li>
+        <li><a href="#" role="button" title="슬라이드 이동"></a></li>
+        <li><a href="#" role="button" title="슬라이드 이동"></a></li>
+        <li><a href="#" role="button" title="슬라이드 이동"></a></li>
+        <li><a href="#" role="button" title="슬라이드 이동"></a></li>
+      </ol>
+    </aside>
+  </div>
+  <main class="container row">
+    <section class="best-seller row">
+      <h2 class="col row is-12">베스트셀러</h2>
+      <ul class="row">
+        <li class="col is-3">
+          <figure>
+            <a href="#">
+              <img src="images/best-seller/bs-seller-01.jpg" alt="">
+            </a>
+            <figcaption>
+              <a href="#">
+                <span class="brand-name">Zemma World</span>
+                <span class="item-name">Puppy-코튼니트</span>
+              </a>
+              <span class="item-price">39,000원</span>
+            </figcaption>
+          </figure>
+          <input type="checkbox" id="best-seller-like1"><label for="best-seller-like1">좋아요</label>
+        </li>
+        <li class="col is-3">
+          <figure>
+            <a href="#">
+              <img src="images/best-seller/bs-seller-02.jpg" alt="">
+            </a>
+            <figcaption>
+              <a href="#">
+                <span class="brand-name">myblin</span>
+                <span class="item-name">버튼 체크 원피스</span>
+              </a>
+              <span class="item-price">41,000원</span>
+            </figcaption>
+          </figure>
+          <input type="checkbox" id="best-seller-like2"><label for="best-seller-like2">좋아요</label>
+        </li>
+        <li class="col is-3">
+          <figure>
+            <a href="#">
+              <img src="images/best-seller/bs-seller-03.jpg" alt="">
+            </a>
+            <figcaption>
+              <a href="#">
+                <span class="brand-name">BULLAN GIRL</span>
+                <span class="item-name">아매라벨맨투맨</span>
+              </a>
+              <span class="item-price">12,500원</span>
+            </figcaption>
+          </figure>
+          <input type="checkbox" id="best-seller-like3"><label for="best-seller-like3">좋아요</label>
+        </li>
+        <li class="col is-3">
+          <figure>
+            <a href="#">
+              <img src="images/best-seller/bs-seller-04.jpg" alt="">
+            </a>
+            <figcaption>
+              <a href="#">
+                <span class="brand-name">MINIBBONG</span>
+                <span class="item-name">Night-스키니팬츠</span>
+              </a>
+              <span class="item-price">29,900원</span>
+            </figcaption>
+          </figure>
+          <input type="checkbox" id="best-seller-like4"><label for="best-seller-like4">좋아요</label>
+        </li>
+      </ul>
+    </section>
+    <section class="brand row">
+      <h2 class="row col is-12">브랜드</h2>
+      <ul class="row">
+        <li class="col is-3">
+          <figure>
+            <a href="#"><img src="images/brand/brand-01.jpg" alt=""></a>
+            <figcaption>mixxmix</figcaption>
+          </figure>
+          <a href="#">01. mixxmix</a>
+          <input type="checkbox" id="brand-like1"><label for="brand-like1">좋아요</label>
+        </li>
+        <li class="col is-3">
+          <figure>
+            <a href="#"><img src="images/brand/brand-02.jpg" alt=""></a>
+            <figcaption>REINE</figcaption>
+          </figure>
+          <a href="#">02. REINE</a>
+          <input type="checkbox" id="brand-like2"><label for="brand-like2">좋아요</label>
+        </li>
+        <li class="col is-3">
+          <figure>
+            <a href="#"><img src="images/brand/brand-03.jpg" alt=""></a>
+            <figcaption>BANHALA</figcaption>
+          </figure>
+          <a href="#">03. BANHALA</a>
+          <input type="checkbox" id="brand-like3"><label for="brand-like3">좋아요</label>
+        </li>
+        <li class="col is-3">
+          <figure>
+            <a href="#"><img src="images/brand/brand-04.jpg" alt=""></a>
+            <figcaption>CHERRYKOKO</figcaption>
+          </figure>
+          <a href="#">04. CHERRYKOKO</a>
+          <input type="checkbox" id="brand-like4"><label for="brand-like4">좋아요</label>
+        </li>
+      </ul>
+      <a href="#" role="button" class="prev-btn">이전 목록</a>
+      <a href="#" role="button" class="next-btn">다음 목록</a>
+    </section>
+    <section class="new-item row">
+      <h2 class="row col is-12">신상품</h2>
+      <ul class="row">
+        <li class="col is-3">
+          <figure>
+            <a href="#">
+              <img src="images/new-items/new-product-01.jpg" alt="">
+            </a>
+            <figcaption>
+              <a href="#">
+                <span class="brand-name">Monobabie</span>
+                <span class="item-name">엘렌 니트원피스</span>
+              </a>
+              <span class="item-price">55,500원</span>
+            </figcaption>
+          </figure>
+          <input type="checkbox" id="new-item-like1"><label for="new-item-like1">좋아요</label>
+        </li>
+        <li class="col is-3">
+          <figure>
+            <a href="#">
+              <img src="images/new-items/new-product-02.jpg" alt="">
+            </a>
+            <figcaption>
+              <a href="#">
+                <span class="brand-name">From Beginning</span>
+                <span class="item-name">Ohkoos vintage Knitk</span>
+              </a>
+              <span class="item-price">26,600원</span>
+            </figcaption>
+          </figure>
+          <input type="checkbox" id="new-item-like2"><label for="new-item-like2">좋아요</label>
+        </li>
+        <li class="col is-3">
+          <figure>
+            <a href="#">
+              <img src="images/new-items/new-product-03.jpg" alt="">
+            </a>
+            <figcaption>
+              <a href="#">
+                <span class="brand-name">Zemma World</span>
+                <span class="item-name">Tied-골지니트</span>
+              </a>
+              <span class="item-price">22,000원</span>
+            </figcaption>
+          </figure>
+          <input type="checkbox" id="new-item-like3"><label for="new-item-like3">좋아요</label>
+        </li>
+        <li class="col is-3">
+          <figure>
+            <a href="#">
+              <img src="images/new-items/new-product-04.jpg" alt="">
+            </a>
+            <figcaption>
+              <a href="#">
+                <span class="brand-name">daily monday</span>
+                <span class="item-name">Buckle Wrap mini skirt</span>
+              </a>
+              <span class="item-price">27,000원</span>
+            </figcaption>
+          </figure>
+          <input type="checkbox" id="new-item-like4"><label for="new-item-like4">좋아요</label>
+        </li>
+      </ul>
+    </section>
+    <section class="girls-tip row">
+      <h2 class="row col is-12">언니의 팁</h2>
+      <ul class="row">
+        <li class="col is-4">
+          <a href="#"><img src="images/tip/product-1.jpg" alt=""></a>
+        </li>
+        <li class="col is-4">
+          <a href="#"><img src="images/tip/product-2.jpg" alt=""></a>
+        </li>
+        <li class="col is-4">
+          <a href="#"><img src="images/tip/product-3.jpg" alt=""></a>
+        </li>
+      </ul>
+      <ol role="group" class="row indicator-group">
+        <li><a href="#" role="button" title="슬라이드 이동"></a></li>
+        <li><a href="#" role="button" title="슬라이드 이동"></a></li>
+        <li><a href="#" role="button" title="슬라이드 이동"></a></li>
+        <li><a href="#" role="button" title="슬라이드 이동"></a></li>
+        <li><a href="#" role="button" title="슬라이드 이동"></a></li>
+        <li><a href="#" role="button" title="슬라이드 이동"></a></li>
+        <li><a href="#" role="button" title="슬라이드 이동"></a></li>
+        <li><a href="#" role="button" title="슬라이드 이동"></a></li>
+        <li><a href="#" role="button" title="슬라이드 이동"></a></li>
+      </ol>
+    </section>
+    <section class="best-review row">
+      <h2 class="col is-12">베스트리뷰</h2>
+      <ul class="row">
+        <li class="col is-2">
+          <figure>
+            <a href="#">
+              <img src="images/best-review/bs-product-01.jpg" alt="">
+            </a>
+            <figcaption>
+              <a href="#">
+                <span class="brand-name">따뜻해줘 가디건</span>
+                <span class="item-name">배송은 쇼핑몰에서 입고가 늦어져서 지연될 예정입니다.</span>
+              </a>
+              <span class="item-price">31,900원</span>
+            </figcaption>
+          </figure>
+          <input type="checkbox" id="best-review-like1"><label for="best-review-like1">좋아요</label>
+          <span class="staring">
+            <span></span>
+          </span>
+        </li>
+        <li class="col is-2">
+          <figure>
+            <a href="#">
+              <img src="images/best-review/bs-product-02.jpg" alt="">
+            </a>
+            <figcaption>
+              <a href="#">
+                <span class="brand-name">버클트임박시후드</span>
+                <span class="item-name">후기를 너무 늦게 썼네요 ㅠ 딱 제가 원하는 스타일</span>
+              </a>
+              <span class="item-price">30,600원</span>
+            </figcaption>
+          </figure>
+          <input type="checkbox" id="best-review-like2"><label for="best-review-like2">좋아요</label>
+          <span class="staring">
+            <span></span>
+          </span>
+        </li>
+        <li class="col is-2">
+          <figure>
+            <a href="#">
+              <img src="images/best-review/bs-product-03.jpg" alt="">
+            </a>
+            <figcaption>
+              <a href="#">
+                <span class="brand-name">Chic-자켓</span>
+                <span class="item-name">어깨가 좀 있는 편이어서 오버핏으로 구매했는데 좋아요</span>
+              </a>
+              <span class="item-price">49,000원</span>
+            </figcaption>
+          </figure>
+          <input type="checkbox" id="best-review-like3"><label for="best-review-like3">좋아요</label>
+          <span class="staring">
+            <span></span>
+          </span>
+        </li>
+        <li class="col is-2">
+          <figure>
+            <a href="#">
+              <img src="images/best-review/bs-product-04.jpg" alt="">
+            </a>
+            <figcaption>
+              <a href="#">
+                <span class="brand-name">마실로 루즈핏 니트</span>
+                <span class="item-name">베이지 색상 카디건 필요했었는데 마침 딱 원하는</span>
+              </a>
+              <span class="item-price">19,000원</span>
+            </figcaption>
+          </figure>
+          <input type="checkbox" id="best-review-like4"><label for="best-review-like4">좋아요</label>
+          <span class="staring">
+            <span></span>
+          </span>
+        </li>
+        <li class="col is-2">
+          <figure>
+            <a href="#">
+              <img src="images/best-review/bs-product-05.jpg" alt="">
+            </a>
+            <figcaption>
+              <a href="#">
+                <span class="brand-name">멜라니 트렌치 코트</span>
+                <span class="item-name">Lorem ipsum dolor sit amet.</span>
+              </a>
+              <span class="item-price">19,000원</span>
+            </figcaption>
+          </figure>
+          <input type="checkbox" id="best-review-like5"><label for="best-review-like5">좋아요</label>
+          <span class="staring">
+            <span></span>
+          </span>
+        </li>
+        <li class="col is-2">
+          <figure>
+            <a href="#">
+              <img src="images/best-review/bs-product-06.jpg" alt="">
+            </a>
+            <figcaption>
+              <a href="#">
+                <span class="brand-name">Luci-브이넥니트</span>
+                <span class="item-name">노랑노랑하니 봄 분위기 나고 좋아요</span>
+              </a>
+              <span class="item-price">24,000원</span>
+            </figcaption>
+          </figure>
+          <input type="checkbox" id="best-review-like6"><label for="best-review-like6">좋아요</label>
+          <span class="staring">
+            <span></span>
+          </span>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer row" role="contactinfo">
+    <div class="contact-menu-bg row">
+      <ul class="container is-12 row">
+        <li><a href="#">YOUYU 소개</a></li>
+        <li><a href="#">통합배송</a></li>
+        <li><a href="#">고객센터</a></li>
+        <li><a href="#">이용약관, 개인정보</a></li>
+      </ul>
+    </div>
+    <div class="container contact">
+      <div role="group"  class="col is-7 contact-info">
+        <div>
+          <span>Company.</span> YOUYU<span>대표이사.</span> 이정희<span>개인정보관리책임자.</span> 이정희<span>사업자번호.</span> 123-45-67890
+        </div>
+        <div>
+          <span>통신판매업신고.</span> 2016-성남분당-1234<span>주소.</span> <address>경기 성남시 분당구 판교역로 221 102호</address><span>대표번호.</span> 1234-5678
+        </div>
+        <div>
+          <span>Copyright &copy; 2016 YOUYU Co,.Ltd. All rights reserved.</span>
+        </div>
+        <ul class="sns-list">
+          <li><a href="#" class="instagram">instagram</a></li>
+          <li><a href="#" class="weibo">weibo</a></li>
+          <li><a href="#" class="facebook">facebook</a></li>
+          <li><a href="#" class="taobao">taobao</a></li>
+          <li><a href="#" class="wechat">wechat</a></li>
+        </ul>
+        <img src="images/footer/partner.png" alt="Youyu 와 codibook 제휴">
+      </div>
+    </div>
+    <div class="info-desk col is-2 is-offset-3">
+      <span>고객센터</span>
+      <span>1234-5678</span>
+      <span>월&sim;금 11AM &sim; 6PM</span>
+      <span>LUNCH 12:30 &sim; 1:30PM</span>
+    </div>
+  </footer>
+<script src="./js/toggleGrid.js"></script>
+</body>
+</html>

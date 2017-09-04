@@ -1,0 +1,294 @@
+@import '../module/layout'
+@import '../module/config'
+@import '../module/font'
+@import '../module/common'
+@import '../module/mixin'
++container($m-width, $m-LR-padding)
+// +grid('m', $m-column, $m-width, $m-column-width, $m-gutter-width)
+// +push('m', $m-column, $m-width, $m-column-width, $m-gutter-width)
+
+
+//header
+.top-heading
+    height: row-grid(4)
+    @extend %clearfix
+    +grid(4, $m-width, $m-column-width, $m-gutter-width)
+    @extend %float
+    padding: row-grid(1) 0
+    box-sizing: border-box
+    .logo
+        float: left
+        margin-top: rem(5px)
+        margin-bottom: 0
+        line-height: 1.0
+    .na-icon
+        float: right
+        padding: rem(10px)
+        border: 1px solid $design-color
+    // @media screen and (min-width: 481px) and (max-width: 760px)
+
+.bg-gray
+    background-color: $light-gray
+
+ul
+    position: absolute
+    +grid(4, $m-width, $m-column-width, $m-gutter-width)
+    @extend %float
+    @extend %reset-list
+    height: 0
+    overflow: hidden
+li
+    @extend %reset-list
+    background-color: $dark-gray
+nav
+    // position: relative
+    color: #d7d7d7
+    li
+        text-align: center
+        padding: row-grid(1) 0
+    a
+        @extend %reset-link
+        font-family: 'Arial'
+        font-size: rem(16px)
+        letter-spacing: rem(1.1px)
+        
+
+.li-container
+    width: 100%
+    background-color: $dark-gray
+
+
+// content1
+.content1
+    height: 0
+    padding-bottom: percentage(288/480)
+    position: relative
+    background: url(../images/fa-play-circle.png)
+    background-size: cover
+    +grid(4, $m-width, $m-column-width, $m-gutter-width)
+    @extend %float
+    button
+        @extend %reset-button
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+    .pre-btn
+        background: url(../images/arrow_left.png) no-repeat
+        +size(27px, 86px)
+        left: percentage($m-LR-padding/$m-width)
+    .paly-btn
+        +size(86px)
+        left: 50%
+        transform: translate(-50%, -50%)
+    .nxt-btn
+        +size(27px, 86px)
+        background: url(../images/arrow-right.png) no-repeat
+        right: percentage($m-LR-padding/$m-width)
+
+// content2
+
+h2
+    font-size: rem(25px)
+    width: 100%
+    margin: 0 auto
+    margin-top: row-grid(1)
+    padding: 0
+    text-align: center
+    line-height: 2
+
+.content2
+    position: relative
+    +grid(4, $m-width, $m-column-width, $m-gutter-width)
+    @extend %float
+
+.line-l, .line-r
+    position: absolute
+    +grid(1, $m-width, $m-column-width, $m-gutter-width)
+    @extend %float
+    // @media screen and (min-width: 760px) and (max-width: 760px)
+        // @extend %t-2-8
+.line-r
+    right: percentage($m-LR-padding/$m-width)
+    top: 0
+    .line
+        margin-left: percentage(25/90)
+.line
+    height: row-grid(2)
+    width: percentage(65/90)
+    border-bottom: 1px solid $light-gray
+    box-sizing: border-box
+
+
+.column-3
+    section
+        +grid(4, $m-width, $m-column-width, $m-gutter-width)
+        @extend %float
+    div
+        margin-top: row-grid(1)
+        width: 100%
+        height: 0
+        padding-bottom: percentage(215/420)
+        background-color: #dadee8
+        position: relative
+    img
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    h3
+        @extend %reset-space
+        font-size: rem(20px)
+        height: row-grid(2)
+        line-height: row-grid(2)
+        background-color: #afb2ba
+        text-indent: rem(20px)
+    p
+        display: none
+
+
+//content 3
+
+
+.content3
+    +grid(4, $m-width, $m-column-width, $m-gutter-width)
+    @extend %float
+    margin-top: row-grid(2)
+    width: 100%
+    height: 0
+    padding-bottom: percentage(288/480)
+    background-color: #f8d2c5
+    position: relative
+    background-size: cover
+    img
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    span
+        width: rem(155px)
+        position: absolute
+        right: percentage($m-LR-padding/$m-width)
+        top: row-grid(1)
+        text-indent: rem(120px)
+        font-size: 1rem
+        color: #feb29a
+        em
+            color: #fff
+            font-style: normal
+    button
+        @extend %reset-button
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+    .pre-btn
+        background: url(../images/w_arrow_left.png) no-repeat
+        +size(27px, 86px)
+        left: percentage($m-LR-padding/$m-width)
+    .nxt-btn
+        +size(27px, 86px)
+        background: url(../images/w_arrow-right.png) no-repeat
+        right: percentage($m-LR-padding/$m-width)
+
+//content4
+
+.content4
+    +grid(4, $m-width, $m-column-width, $m-gutter-width)
+    @extend %float
+    position: relative
+    .column-4
+        margin-bottom: row-grid(1)
+        a
+            +grid(1, $m-width, $m-column-width, $m-gutter-width)
+            @extend %float
+            position: relative
+            // left: 0
+            // top: 50%
+            margin-right: -100%
+            // transform: translateY(-50%)
+            padding-top: row-grid(1)/2
+        .u-desc
+            height: row-grid(5)
+            box-sizing: border-box
+            padding: row-grid(1) 0
+            padding-left: row-grid(1)
+            +grid(3, $m-width, $m-column-width, $m-gutter-width)
+            @extend %float
+            +push(1, $m-width, $m-column-width, $m-gutter-width)
+        section
+            position: relative
+            margin-top: row-grid(1)
+            h3
+                @extend %reset-space
+                font-size: rem(20px)
+            p
+                @extend %reset-space
+                word-break: keep-all
+
+//content5
+
+.content5
+    +grid(4, $m-width, $m-column-width, $m-gutter-width)
+    @extend %float
+    position: relative
+    padding-bottom: 75%
+    height: 0
+    overflow: hidden
+    max-width: 100%
+    iframe
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        border: 0
+
+//content6
+
+.content6
+    +grid(4, $m-width, $m-column-width, $m-gutter-width)
+    @extend %float
+    position: relative
+    fieldset
+        border: 0
+        margin: 0
+        padding: 0
+    input
+        margin-top: row-grid(1)
+        width: 100%
+        border: 1px solid #dadee8
+        text-indent: rem(20px)
+        border-radius: 4px
+        height: row-grid(2)
+        font-size: rem(16px)
+    .message
+        textarea
+            margin-top: row-grid(1)        
+            width: 99%
+            border: 1px solid #dadee8
+            text-indent: rem(20px)
+            border-radius: 4px
+            height: row-grid(10)
+            font-size: rem(16px)
+            font-family: 'NanumGothic'
+            padding-top: row-grid(1)
+    button
+        margin: row-grid(1) 0
+        color: #fff
+        border: 0
+        border-radius: 4px
+        height: row-grid(3)
+        font-size: rem(20px)
+        font-family: 'NanumGothic'
+        background: url(../images/fa-send.png) no-repeat rem(130px) row-grid(1)
+        background-color: #4d4b4a
+        +grid(4, $m-width, $m-column-width, $m-gutter-width)
+        @extend %float
+
+footer
+    +grid(4, $m-width, $m-column-width, $m-gutter-width)
+    @extend %float
+    background-color: #d6d2d1
+    h2
+        font-family: 'Arial'
+        font-size: rem(16px)
+        margin-bottom: row-grid(1)

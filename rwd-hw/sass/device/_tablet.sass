@@ -1,0 +1,102 @@
+@import '../module/layout'
+@import '../module/config'
+@import '../module/font'
+
+
+.container
+    @media screen and (min-width: 760px) and (max-width: 1000px)
+        padding: 0 percentage($t-LR-padding/$t-width)
+
+.line-l, .line-r
+    @media screen and (min-width: 760px) and (max-width: 1000px)
+        +grid(2, $t-width, $t-column-width, $t-gutter-width)
+
+.line-r
+    .line
+        @media screen and (min-width: 760px) and (max-width: 1000px)
+            margin-left: percentage(27/70)
+.content2
+    @media screen and (min-width: 760px) and (max-width: 1000px)
+        +grid(8, $t-width, $t-column-width, $t-gutter-width)
+    
+.column-3 section:nth-child(2), .column-3 section:nth-child(3)
+    @media screen and (min-width: 760px) and (max-width: 1000px)
+        +grid(4, $t-width, $t-column-width, $t-gutter-width)
+
+.column-3 section:nth-child(2)
+    @media screen and (min-width: 760px) and (max-width: 1000px)
+        margin-right: -100%
+        clear: left
+
+.column-3 section:nth-child(3)
+    @media screen and (min-width: 760px) and (max-width: 1000px)
+        +push(4, $t-width, $t-column-width, $t-gutter-width)
+
+.column-3 h3
+    @media screen and (min-width: 760px) and (max-width: 1000px)
+        line-height: 1
+        background-color: transparent
+        text-indent: 0
+        height: row-grid(1)
+
+.column-3 div
+    @media screen and (min-width: 760px) and (max-width: 1000px)
+        margin-bottom: row-grid(1)
+.column-3 p
+    @media screen and (min-width: 760px) and (max-width: 1000px)
+        display: block
+        margin: 0
+
+.content3 span
+    @media screen and (min-width: 760px) and (max-width: 1000px)
+        background: url(../images/indicator.png) no-repeat
+        top: 100%
+        left: 50%
+        white-space: nowrap
+        overflow: hidden
+        text-indent: 100%
+        transform: translate(-50%, -200%)
+
+.content4 .column-4 section
+    @media screen and (min-width: 760px) and (max-width: 1000px)
+        +grid(4, $t-width, $t-column-width, $t-gutter-width)
+        float: left
+
+.column-4 section:first-child
+    @media screen and (min-width: 760px) and (max-width: 1000px)
+        margin-right: -100%
+
+.column-4 section:nth-child(2)
+    @media screen and (min-width: 760px) and (max-width: 1000px)
+        float: left
+        +push(4, $t-width, $t-column-width, $t-gutter-width)
+
+.column-4 section:nth-child(3)
+    @media screen and (min-width: 760px) and (max-width: 1000px)
+        float: left
+        clear: left
+        margin-right: -100%
+.column-4 section:nth-child(4)
+    @media screen and (min-width: 760px) and (max-width: 1000px)
+        float: left
+        margin-right: -100%
+        +push(4, $t-width, $t-column-width, $t-gutter-width)
+        
+        
+.content4 .column-4 section a, .content4 .column-4 section .u-desc
+    @media screen and (min-width: 760px) and (max-width: 1000px)
+        float: left
+        margin: 0
+        padding: 0
+        width: 100%
+.content4 .column-4 section a img
+    @media screen and (min-width: 760px) and (max-width: 1000px)
+        margin: 0 auto
+        display: block
+        padding-bottom: row-grid(1)
+
+.content4 .column-4 section .u-desc
+    @media screen and (min-width: 760px) and (max-width: 1000px)
+        // clear: left
+        text-align: center
+

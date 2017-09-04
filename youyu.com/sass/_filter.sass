@@ -1,0 +1,112 @@
+.filter
+  overflow: hidden
+  height: leading(2)
+  position: relative
+  transition: all 0.5s ease-in-out
+  &:hover, &:focus
+    height: leading(11)
+  &-bg
+    z-index: 20
+    width: 100%
+    position: absolute
+    background-color: #f0f0f0
+    margin-top: (leading(1) - 3px)
+    border-top: 2px solid #bd1d31
+  &-button
+    outline: none
+    padding-top: 2px
+    box-sizing: border-box
+    font-size: $base-font-size
+    color: #aa4242
+    text-align: center
+    line-height: leading(2)
+    height: leading(2)
+    &-set
+      margin-top: leading(2)
+      padding: 0 50px
+      button
+        padding: 8px 20px
+        background-color: #aaa
+        border-radius: leading(1)
+        font-size: 1.7rem
+        color: #fff
+        cursor: pointer
+        &:last-child
+          margin-left: 6px
+        &:hover, &:focus
+          background-color: #bd1d31
+        
+    &::before
+      content: ''
+      display: inline-block
+      width: 18px
+      height: 17px
+      background-image: url(../images/icons/icons.svg)
+      background-size: 18px auto
+      background-position-y: -54px
+      margin-right: 10px
+      position: relative
+      top: 4px
+  &-form
+    position: absolute
+    top: leading(2)
+    .age
+      margin-top: leading(1)
+      margin-bottom: leading(1)
+    legend
+      float: left
+      margin-right: 20px
+      font-size: 1.6rem
+      letter-spacing: 1px
+    input
+      position: absolute
+      width: 1px
+      height: 1px
+      margin: -1px
+      clip: rect(0 0 0 0)
+      clip: rect(0, 0, 0, 0)
+    label
+      display: inline-block
+      width: 70px
+      text-align: center
+      background-color: #aaa
+      border-radius: 2px 2px 0 0
+      color: #fff
+      margin-left: 6px
+      &:nth-child(3)
+        margin-left: 0
+#teenager:checked ~ label[for^=teen],
+#teenager:focus ~ label[for^=teen],
+#teenager:hover ~ label[for^=teen],
+#twenty:checked ~ label[for^=twen],
+#twenty:focus ~ label[for^=twen],
+#twenty:hover ~ label[for^=twen],
+#thirty:checked ~ label[for^=thirty],
+#thirty:focus ~ label[for^=thirty],
+#thirty:hover ~ label[for^=thirty],
+#girl:checked ~ label[for^=girl],
+#girl:focus ~ label[for^=girl],
+#girl:hover ~ label[for^=girl],
+#modern:checked ~ label[for^=modern],
+#modern:focus ~ label[for^=modern],
+#modern:hover ~ label[for^=modern],
+#simple:checked ~ label[for^=simple],
+#simple:focus ~ label[for^=simple],
+#simple:hover ~ label[for^=simple],
+#romentic:checked ~ label[for^=romentic],
+#romentic:focus ~ label[for^=romentic],
+#romentic:hover ~ label[for^=romentic],
+#office:checked ~ label[for^=office],
+#office:focus ~ label[for^=office],
+#office:hover ~ label[for^=office],
+#campus:checked ~ label[for^=campus],
+#campus:focus ~ label[for^=campus],
+#campus:hover ~ label[for^=campus],
+#vintage:checked ~ label[for^=vintage],
+#vintage:focus ~ label[for^=vintage],
+#vintage:hover ~ label[for^=vintage],
+#training:checked ~ label[for^=training],
+#training:focus ~ label[for^=training],
+#training:hover ~ label[for^=training]
+  background-color: #bd1d31
+  cursor: pointer

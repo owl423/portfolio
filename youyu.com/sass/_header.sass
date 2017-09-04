@@ -1,0 +1,86 @@
+.header
+  padding-top: leading(2)
+
+.logo 
+  a
+    display: block
+    height: leading(3)
+  img
+    width: 175px
+    display: block
+    height: leading(3)
+
+.user-menu 
+  list-style: none
+  padding-top: leading(1)
+  li
+    display: inline-block
+    a
+      text-decoration: none
+      color: #991717
+
+    &:first-child a
+      padding: 0 20px
+    &:last-child a
+      padding-left: 20px
+
+
+.search-form 
+  padding: leading(1)/2 70px 0 70px
+  fieldset
+    font-size: 0px
+    border: 2px solid #000
+  legend
+    +a11y-hidden
+  input
+    width: 340px
+    padding: 0 0 0 10px
+    border: 0 none
+  button
+    width: 18px
+    height: 17px
+    border: 0 none
+    overflow: hidden
+    text-indent: -99999px
+    background-color: transparent
+    background-image: url('../images/icons/icons.svg')
+    background-position: 0 -126px
+    background-size: 18px auto
+    background-repeat: no-repeat
+  input
+    height: leading(2)
+
+.navi
+  clear: left
+  height: leading(3)
+  padding-top: leading(2)
+  ul
+    li
+      float: left
+      margin-left: 20px
+      margin-top: -3px
+      margin-bottom: -5px
+      &:first-child
+        margin-left: 0
+      a
+        text-decoration: none
+        display: block
+        padding: 2px 15px
+        text-transform: uppercase
+        color: #333
+        letter-spacing: 0.3px
+        &:hover
+          background: #bd1d31
+          color: #fff
+        &:focus
+          background: #bd1d31
+          color: #fff
+
+.a11y-hidden
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  clip: rect(0 0 0 0)
+  clip: rect(0, 0, 0, 0)
+  overflow: hidden

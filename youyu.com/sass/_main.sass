@@ -1,0 +1,252 @@
+
+// best-seller, new-item
+.best-seller, .new-item, .best-review
+  margin-top: leading(2)
+  h2
+    font-size: 2.1rem
+    line-height: 1
+  li
+    margin-top: leading(1) - 2px
+    padding: leading(1)
+    border: 1px solid #ddd
+    box-sizing: border-box
+    position: relative
+    &:hover
+      border: 2px solid #b93949
+    > label
+      cursor: pointer
+      text-indent: -9999px
+      position: absolute
+      right: leading(1)
+      bottom: leading(1)
+      width: 15px
+      height: 15px
+      background-image: url(../images/icons/icons.svg)
+      background-size: 15px auto
+      background-position-y: -75px
+  a
+    display: block
+    img
+      display: block
+      margin: 0 auto
+      width: 210px
+      height: auto
+  figcaption
+    margin-top: leading(1)
+  .brand-name,
+  .item-name,
+  .item-price
+    display: block
+
+  .brand-name
+    font-weight: bold
+    color: #333
+  .item-name
+    color: #7a7a7a
+  .item-price
+    color: #bd1d31
+    font-size: 1.7rem
+    line-height: 1
+    margin-top: leading(1)
+
+.best-review
+  a
+    img
+      width: 123px
+    .brand-name
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+    .item-name
+      width: 110px
+      line-height: 1.5
+      height: leading(2)
+      overflow: hidden
+      text-overflow: ellipsis
+      text-align: left
+      word-wrap: break-word
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+  li > label
+    bottom: leading(3) - 5px
+  .staring
+    display: block
+    margin: leading(1) + 3px auto 3px auto
+    width: 14px * 5
+    height: 13px
+    background-image: url(../images/icons/icons.svg)
+    background-size: 14px auto
+    background-position-y: -140px
+    cursor: pointer
+    span
+      display: block
+      width: 20%
+      height: 100%
+      background-image: url(../images/icons/icons.svg)
+      background-size: 14px auto
+      background-position-y: -280px
+#best-seller-like1:checked ~ label[for="best-seller-like1"],
+#best-seller-like1 ~ label[for="best-seller-like1"]:hover,
+#best-seller-like1 ~ label[for="best-seller-like1"]:focus,
+#best-seller-like2:checked ~ label[for="best-seller-like2"],
+#best-seller-like2 ~ label[for="best-seller-like2"]:hover,
+#best-seller-like2 ~ label[for="best-seller-like2"]:focus,
+#best-seller-like3:checked ~ label[for="best-seller-like3"],
+#best-seller-like3 ~ label[for="best-seller-like3"]:hover,
+#best-seller-like3 ~ label[for="best-seller-like3"]:focus,
+#best-seller-like4:checked ~ label[for="best-seller-like4"],
+#best-seller-like4 ~ label[for="best-seller-like4"]:hover,
+#best-seller-like4 ~ label[for="best-seller-like4"]:focus
+  background-position-y: -60px
+#best-seller-like1,
+#best-seller-like2,
+#best-seller-like3,
+#best-seller-like4,
+  +a11y-hidden
+
+#new-item-like1:checked ~ label[for="new-item-like1"],
+#new-item-like1 ~ label[for="new-item-like1"]:hover,
+#new-item-like1 ~ label[for="new-item-like1"]:focus,
+#new-item-like2:checked ~ label[for="new-item-like2"],
+#new-item-like2 ~ label[for="new-item-like2"]:hover,
+#new-item-like2 ~ label[for="new-item-like2"]:focus,
+#new-item-like3:checked ~ label[for="new-item-like3"],
+#new-item-like3 ~ label[for="new-item-like3"]:hover,
+#new-item-like3 ~ label[for="new-item-like3"]:focus,
+#new-item-like4:checked ~ label[for="new-item-like4"],
+#new-item-like4 ~ label[for="new-item-like4"]:hover,
+#new-item-like4 ~ label[for="new-item-like4"]:focus
+  background-position-y: -60px
+#new-item-like1,
+#new-item-like2,
+#new-item-like3,
+#new-item-like4,
+  +a11y-hidden
+
+#best-review-like1:checked ~ label[for="best-review-like1"],
+#best-review-like1 ~ label[for="best-review-like1"]:hover,
+#best-review-like1 ~ label[for="best-review-like1"]:focus,
+#best-review-like2:checked ~ label[for="best-review-like2"],
+#best-review-like2 ~ label[for="best-review-like2"]:hover,
+#best-review-like2 ~ label[for="best-review-like2"]:focus,
+#best-review-like3:checked ~ label[for="best-review-like3"],
+#best-review-like3 ~ label[for="best-review-like3"]:hover,
+#best-review-like3 ~ label[for="best-review-like3"]:focus,
+#best-review-like4:checked ~ label[for="best-review-like4"],
+#best-review-like4 ~ label[for="best-review-like4"]:hover,
+#best-review-like4 ~ label[for="best-review-like4"]:focus,
+#best-review-like5:checked ~ label[for="best-review-like5"],
+#best-review-like5 ~ label[for="best-review-like5"]:hover,
+#best-review-like5 ~ label[for="best-review-like5"]:focus,
+#best-review-like6:checked ~ label[for="best-review-like6"],
+#best-review-like6 ~ label[for="best-review-like6"]:hover,
+#best-review-like6 ~ label[for="best-review-like6"]:focus
+  background-position-y: -60px
+
+#best-review-like1,
+#best-review-like2,
+#best-review-like3,
+#best-review-like4,
+#best-review-like5,
+#best-review-like6,
+  +a11y-hidden
+// brand
+
+.brand
+  position: relative
+  margin-top: leading(2) + 2px
+  > a
+    position: absolute
+    display: block
+    height: leading(7)
+    width: 22px
+    text-indent: -9999px
+    top: leading(2)
+  .prev-btn
+    left: - leading(1)
+    background-image: url(../images/brand/ar_left.png)
+  .next-btn
+    right: - leading(1)
+    background-image: url(../images/brand/ar_right.png)
+  h2
+    line-height: 1
+    margin-bottom: leading(1)
+  li
+    position: relative
+    a
+      display: block
+    img
+      display: block
+    figcaption
+      position: absolute
+      left: 50%
+      top: 50%
+      margin-top: - leading(1)/3
+      transform: translate(-50%, -50%)
+      color: #fff
+      font-size: 2.7rem
+      font-weight: bold
+    > a
+      position: absolute
+      width: 100%
+      color: #fff
+      background-color: rgba(0, 0, 0, 0.5)
+      height: leading(1)
+      line-height: leading(1)
+      top: leading(6)
+      padding-left: 10px
+    > input
+      +a11y-hidden
+    > label
+      cursor: pointer
+      text-indent: -9999px
+      position: absolute
+      right: 10px
+      bottom: 2px
+      width: 15px
+      height: 15px
+      background-image: url(../images/icons/icons.svg)
+      background-size: 15px auto
+      background-position-y: -75px
+
+#brand-like1:checked ~ label[for="brand-like1"],
+#brand-like1 ~ label[for="brand-like1"]:hover,
+#brand-like1 ~ label[for="brand-like1"]:focus,
+#brand-like2:checked ~ label[for="brand-like2"],
+#brand-like2 ~ label[for="brand-like2"]:hover,
+#brand-like2 ~ label[for="brand-like2"]:focus,
+#brand-like3:checked ~ label[for="brand-like3"],
+#brand-like3 ~ label[for="brand-like3"]:hover,
+#brand-like3 ~ label[for="brand-like3"]:focus,
+#brand-like4:checked ~ label[for="brand-like4"],
+#brand-like4 ~ label[for="brand-like4"]:hover,
+#brand-like4 ~ label[for="brand-like4"]:focus
+  background-position-y: -60px
+
+
+// girls-tip
+
+.girls-tip
+  margin-top: leading(2) + 2px
+  position: relative
+  h2
+    line-height: 1
+  li
+    margin-top: leading(1)
+    img
+      display: block
+    a
+      display: block
+  .indicator-group
+    top: 0
+    right: 10px
+    padding-top: 6px
+    li
+      margin-top: 0
+
+// best-review
+.best-review
+  margin-top: leading(2)
+  h2
+    line-height: 1

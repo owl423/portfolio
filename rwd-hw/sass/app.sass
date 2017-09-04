@@ -1,0 +1,34 @@
+@import 'module/layout'
+@import 'module/config'
+@import 'module/font'
+
++font('../font/NanumGothic', 'NanumGothic')
+
+
+
+html
+    font-size: $root-font-size
+
+body
+    font-family: 'NanumGothic'
+    @extend %reset-space
+
+div
+    @extend %reset-space
+    
+.wapper
+    margin: 0 auto
+
+.hidden
+    @extend %hidden
+
+.row
+    @extend %clearfix
+
+//모바일 first
+
+@import 'device/mobile'
+
+@import 'device/tablet'
+
+@import 'device/desktop'

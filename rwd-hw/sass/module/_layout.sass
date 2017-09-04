@@ -1,0 +1,29 @@
+@import 'common'
+@import 'function'
+@import 'config'
+
+=container($width, $LR-padding)
+    .container
+        width: 100%
+        padding: 0 percentage($LR-padding/$width)
+        box-sizing: border-box
+
+// grid믹스인 전달인자 사용 col개수, 전체너비, 각 행 너비, 거터 너비
+=grid($i, $width, $col-w, $gutter-w)
+    width: cal-w-ratio($i, $col-w, $gutter-w, $width)
+
+//푸시 전달인자 사용 col개수, 전체너비, 각 행 너비, 거터 넓이
+=push($i, $width, $col-w, $gutter-w)
+    margin-left: cal-p-ratio($i, $col-w, $gutter-w, $width)
+
+//row grid 
+@function row-grid($n)
+    @return rem($n * $row-grid-height)
+
+//너비 비율 구하는 함수
+@function cal-w-ratio($i, $col-w, $gutter-w, $width)
+    @return percentage(($col-w * $i + $gutter-w * ($i - 1))/$width)
+
+//푸시 비율 구하는 함수
+@function cal-p-ratio($i, $col-w, $gutter-w, $width)
+    @return percentage(($col-w * $i + $gutter-w * $i)/$width)
